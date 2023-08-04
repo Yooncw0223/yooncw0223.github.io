@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ghsite/static/css/main.073c9b0a.css",
+    "main.js": "/ghsite/static/js/main.1aa4c05a.js",
+    "static/js/787.8f6f406d.chunk.js": "/ghsite/static/js/787.8f6f406d.chunk.js",
+    "static/media/logo.svg": "/ghsite/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/ghsite/index.html",
+    "main.073c9b0a.css.map": "/ghsite/static/css/main.073c9b0a.css.map",
+    "main.1aa4c05a.js.map": "/ghsite/static/js/main.1aa4c05a.js.map",
+    "787.8f6f406d.chunk.js.map": "/ghsite/static/js/787.8f6f406d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1aa4c05a.js"
+  ]
+}
