@@ -1,0 +1,29 @@
+
+.navBar {
+  float: right;
+}
+
+.navList {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+
+}
+
+.navBar li {
+  color: white;
+  display: inline-block;
+  margin:20px;
+  padding:20px;
+
+}
+
+header {
+  background: #062b4a;
+}
+
+header::after {
+  display: table;
+  content: '';
+  clear: both;
+}
