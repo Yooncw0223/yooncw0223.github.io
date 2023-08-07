@@ -1,38 +1,73 @@
 .App {
   text-align: center;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  background: #171717;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 80px;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-self: left;
+  width: 120px;
+  object-fit: cover;
+  margin-left:20px;
+  margin-top: 10px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-self: left;
+}
+
+.App h2 {
+  font-family: Ubuntu;
+  color: #b5b4a5;
+  font-size: 80px;
+  margin-top: 5%;
+  white-space: pre-line;
+}
+
+.App p {
+  margin-top: 100px;
+  font-family: Ubuntu;
+  /* color: #dbdaca; */
+  color: #b5b4a5;
+  font-size: 20px;
+}
+
+.App pre {
+  margin-top: 100px;
+  font-family: Ubuntu;
+  /* color: #dbdaca; */
+  color: #b5b4a5;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: 'Silkscreen';
+  font-weight: 400;
+  src: local('Silkscreen'), url(./assets/fonts/Silkscreen-Regular.ttf) format('truetype');
+}
+/**/
+/* @font-face { */
+/*   font-family: 'Ubuntu'; */
+/*   font-weight: 400; */
+/*   src: local('Ubuntu'), url(./assets/fonts/Ubuntu-Regular.ttf) format('truetype'); */
+/* } */
+/**/
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  src: local('Ubuntu-medium'), url(./assets/fonts/Ubuntu-Medium.ttf) format('truetype');
 }

@@ -1,6 +1,27 @@
 
+.nav-header {
+  background-color:#212020;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+}
+
+.siteTitle {
+  font-size: 70px;
+  font-family: Silkscreen;
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+  justify-content: center;
+  color: #71c200;
+}
+
 .navBar {
-  float: right;
+  justify-self: right; 
 }
 
 .navList {
@@ -11,19 +32,17 @@
 }
 
 .navBar li {
-  color: white;
   display: inline-block;
-  margin:20px;
+  margin:0px;
   padding:20px;
-
 }
 
-header {
-  background: #062b4a;
+.navBar li a {
+  color: #71c200;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Silkscreen
 }
 
-header::after {
-  display: table;
-  content: '';
-  clear: both;
-}
+
