@@ -1,0 +1,21 @@
+.textbody {
+  margin-top: 100px;
+  font-family: Ubuntu;
+  /* color: #dbdaca; */
+  color: #b5b4a5;
+  font-size: 20px;
+}
+
+.textHeader {
+  color: #b5b4a5;
+  font-size: 40px;
+  font-family: Ubuntu
+}
+
+.title {
+  font-family: Silkscreen;
+  font-size: 45px;
+  color: #71c200;
+  margin: 100px;
+  
+}

@@ -30,42 +30,12 @@
   justify-self: left;
 }
 
-.App h2 {
-  font-family: Ubuntu;
-  color: #b5b4a5;
-  font-size: 80px;
-  margin-top: 5%;
-  white-space: pre-line;
-}
-
-.App p {
-  margin-top: 100px;
-  font-family: Ubuntu;
-  /* color: #dbdaca; */
-  color: #b5b4a5;
-  font-size: 20px;
-}
-
-.App pre {
-  margin-top: 100px;
-  font-family: Ubuntu;
-  /* color: #dbdaca; */
-  color: #b5b4a5;
-  font-size: 20px;
-}
-
 @font-face {
   font-family: 'Silkscreen';
   font-weight: 400;
   src: local('Silkscreen'), url(./assets/fonts/Silkscreen-Regular.ttf) format('truetype');
 }
-/**/
-/* @font-face { */
-/*   font-family: 'Ubuntu'; */
-/*   font-weight: 400; */
-/*   src: local('Ubuntu'), url(./assets/fonts/Ubuntu-Regular.ttf) format('truetype'); */
-/* } */
-/**/
+
 @font-face {
   font-family: 'Ubuntu';
   font-weight: 500;

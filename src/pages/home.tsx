@@ -1,8 +1,9 @@
 
+import './home.css';
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <h2>
         {randomGreetingMsg()}
       </h2>

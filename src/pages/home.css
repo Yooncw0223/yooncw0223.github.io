@@ -1,0 +1,17 @@
+
+.home h2 {
+  font-family: Ubuntu;
+  color: #b5b4a5;
+  font-size: 80px;
+  margin-top: 5%;
+  white-space: pre-line;
+}
+
+.home pre {
+  margin-top: 100px;
+  font-family: Ubuntu;
+  /* color: #dbdaca; */
+  color: #b5b4a5;
+  font-size: 20px;
+}
+
