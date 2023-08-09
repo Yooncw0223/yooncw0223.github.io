@@ -1,0 +1,10 @@
+
+
+export default function Card(props: any) {
+  { title, imagePath, link } = props;
+  return (
+    <div>
+      hello
+    </div>
+  );
+}

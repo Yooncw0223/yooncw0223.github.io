@@ -1,9 +1,9 @@
 .textbody {
-  margin-top: 100px;
   font-family: Ubuntu;
   /* color: #dbdaca; */
   color: #b5b4a5;
   font-size: 20px;
+  white-space: pre-line;
 }
 
 .textHeader {
@@ -16,6 +16,6 @@
   font-family: Silkscreen;
   font-size: 45px;
   color: #71c200;
-  margin: 100px;
-  
+  margin-top: 5%;
+  text-decoration: underline 5px;
 }
