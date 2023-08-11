@@ -19,7 +19,13 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseurl": ".",
     "paths": {
+      "@": ["./src"],
+      "@/*": ["./src/*"],
+      "@components": ["./src/components"],
+      "@images": ["./src/assets/images"],
+      "@posts": ["./src/assets/posts"]
       
     }
   },

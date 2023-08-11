@@ -1,0 +1,17 @@
+
+.card {
+  width: min(20vw, 20vh, 400px);
+  height: min(20vw, 20vh, 400px);
+  /* background-color: #80d090; */
+  background-color: #111111;
+  border-radius: 1cm;
+}
+
+.cardTitle {
+  color: transparent; 
+}
+
+.cardLInk {
+  color: transparent;
+  text-decoration: none;
+}

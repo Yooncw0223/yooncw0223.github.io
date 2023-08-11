@@ -1,4 +1,5 @@
 
+import './card.css';
 import { useNavigate } from "react-router-dom";
 
 export default function Card(props: any) {
@@ -9,7 +10,7 @@ export default function Card(props: any) {
       <h2 className="cardTitle">
         { title }
       </h2>
-      <img src={imagePath} className="imageContent" />
+      <a className="cardLink" href={link}>LinkedIn</a>
     </div>
   );
 }
