@@ -1,5 +1,5 @@
 
-.home h2 {
+.homeHeading {
   font-family: var(--pageHeadingFont);
   color: var(--pageHeadingFont);
   font-size: 80px;
@@ -7,7 +7,7 @@
   white-space: pre-line;
 }
 
-.home pre {
+.homeContent {
   margin-top: 100px;
   font-family: var(--textFont);
   color: var(--textColor);

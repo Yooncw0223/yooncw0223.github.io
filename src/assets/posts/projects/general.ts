@@ -1,6 +1,8 @@
 
-import {test} from './bar';
+import {content} from './bar';
 
-console.log(test);
 
-export {test};
+export const contentList = [
+  content,
+
+];

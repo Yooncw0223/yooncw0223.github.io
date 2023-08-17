@@ -4,10 +4,10 @@ import './home.css';
 export default function Home() {
   return (
     <div className="home">
-      <h2>
+      <h2 className="homeHeading">
         {randomGreetingMsg()}
       </h2>
-      <pre>
+      <pre className="homeContent">
         {randomAsciiArt()}
       </pre>
     </div>
