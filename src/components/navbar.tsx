@@ -9,34 +9,18 @@ export default function Navbar() {
       <div className="headerLeft">
 
         <img src={logo} className="App-logo" />
-        <h1 className="siteTitle"> Yooncw0223 </h1>
+        <Link className="siteTitle" to="/"> SITE-A </Link>
 
       </div>
 
+      <hr className="verticalLine" />
+
       <nav className="navBar">
-        
-        <ul className="navList">
-          <li className="navBarElement">
-            <Link to="/"> Home </Link>
-          </li>
-
-          <li className="navBarElement">
-            <Link to="/reflections"> Reflections </Link>
-          </li>
-
-          <li className="navBarElement">
-            <Link to="/projects"> Projects </Link>
-          </li>
-
-            <li className="navBarElement">
-              <Link to="/misc"> Miscellaneous </Link>
-            </li>
-
-            <li className="navBarElement">
-              <Link to="/about"> About </Link>
-            </li>
-          </ul>
-        </nav>
+        <Link className="navBarElement" to="/projects">	🧪Projects </Link>
+        <Link className="navBarElement" to="/papers"> 📝Papers </Link>
+        <Link className="navBarElement" to="/misc"> 📑Miscellaneous </Link>
+        <Link className="navBarElement" to="/about"> 🐱About </Link>
+      </nav>
     </header>
 
   );

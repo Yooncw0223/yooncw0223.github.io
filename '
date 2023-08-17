@@ -1,0 +1,55 @@
+
+.nav-header {
+  /* background-color:#212020; */
+  /* background-color: #171717; */
+  background-color: var(--backgroundColor);
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+}
+
+.siteTitle {
+  font-size: 50px;
+  font-family: var(--siteTitleFont);
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+  justify-content: center;
+  align-self: center;
+  color: var(--siteTitle);
+}
+
+.verticalLine {
+  height: 80px;
+}
+
+.navBar {
+  justify-self: right; 
+  margin-right: 1%;
+}
+
+.navList {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.navBar li {
+  display: inline-block;
+  margin:0px;
+  padding:20px;
+}
+
+.navBar li a {
+  color: var(--navBarMenuColor);
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Karla; 
+}
+
+

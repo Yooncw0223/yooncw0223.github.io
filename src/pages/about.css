@@ -1,36 +1,81 @@
 .about {
-  width: min(50vw, 600px);
-  margin-left: auto;
-  margin-right: auto;
+  width: min(50vw, 650px);
+  height: 100vh;
+  margin: auto;
 }
 
 .textbody {
-  font-family: Ubuntu;
+  font-family: var(--textFont);
   /* color: #dbdaca; */
-  color: #b5b4a5;
+  color: var(--textColor);
   font-size: 20px;
   white-space: pre-line;
   text-align: center;
 }
 
 .listText {
-  font-family: Ubuntu;
-  color: #b5b4a5;
-  font-size: 20px;
+  font-family: var(--textFont);
+  /* color: #b5b4a5; */
+  color: var(--textColor);
+  font-size: 24px;
   white-space: pre-line;
   text-align: left;
 }
 
 .textHeader {
-  color: #b5b4a5;
+  /* color: #b5b4a5; */
+  color: var(--textColor);
   font-size: 40px;
-  font-family: Ubuntu
+  font-family: var(--pageHeadingColor)
 }
 
 .title {
-  font-family: Silkscreen;
+  font-family: Karla;
   font-size: 45px;
-  color: #71c200;
+  color: var(--pageHeadingColor);
   margin-top: 5%;
   text-decoration: underline 5px;
 }
+
+.cardList:nth-child(1) {
+  background-color: black;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardLogo {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3%;
+  padding: min(1vw, 10px);
+  padding-top: 0px;
+  margin: min(1vw, 10px);
+
+  text-decoration: none;
+}
+
+.cardLogo:hover {
+  background-color: #faf0e6;
+}
+
+.cardContent {
+  margin: min(2vw, 20px);
+  padding: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  width: min(100px, 4vw);
+}
+
+.iconText {
+  font-size: min(2vw, 20px);
+  color: black;
+}
+
+
