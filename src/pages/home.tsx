@@ -17,8 +17,6 @@ export default function Home() {
 
 
 function randomGreetingMsg(): string {
-  let date = new Date();
-  console.log(date.getHours());
   const MESSAGES_MORNING = [
     "안녕하세요!",
     "Good morning!",
@@ -46,8 +44,6 @@ function randomGreetingMsg(): string {
     MESSAGES = MESSAGES_LUNCH;
   else
     MESSAGES = MESSAGES_EVENING;
-      
-    
 
   return MESSAGES[Math.trunc(Math.random() * MESSAGES.length)];
 }

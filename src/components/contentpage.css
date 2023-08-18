@@ -1,0 +1,24 @@
+
+.contentPageDiv {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.tableOfContent {
+  width: 24%;
+  margin: 0;
+  padding: 0;
+}
+
+.contentVerticalLine {
+  width: 0px;
+  height: 100vh;
+  margin-left: 0px;
+  border-style: solid;
+}
+
+.articleContent {
+  margin-left: 0px;
+  padding: 1000px;
+}

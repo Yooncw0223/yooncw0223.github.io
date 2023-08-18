@@ -1,22 +1,18 @@
 
+// export const post = () => {
+//   console.log("bar reached");
+//   return "hellllllooooooo";
+// };
 //
-// export class Bar {
 //
-//   private link: Number;
-//   public constructor() {
-//     this.link = 3;
-//   }
+// const text = "hello2";
 //
-//   getContent() {
-//     return "hello there";
-//   }
+// export default {
+//   text: text,
 // }
+//
 
-
-export const content = `
-  hello
-
-  there
-  - hello thre
-`;
-
+export const content = {
+  title: "hello",
+  mdContent: "**world**",
+};

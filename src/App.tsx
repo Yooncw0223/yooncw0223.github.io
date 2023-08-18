@@ -17,9 +17,6 @@ function App() {
       <Navbar/>
 
       <hr className="line"/>
-      
-      <button onClick={()=>console.log(content)}>test me</button>
-      <ReactMarkdown children={content} />
 
       <Suspense fallback={<>Loading...</>}>
         
@@ -27,8 +24,8 @@ function App() {
           <Route path="/" element={<HOME/>}/>
           <Route path="/about" element={<ABOUT/>}/>
           <Route path="/projects" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
-          <Route path="/papers" element={<CONTENT contentPath={"./assets/posts"} />}/>
-          <Route path="/misc" element={<CONTENT contentPath={"./assets/posts"} />}/>
+          <Route path="/papers" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
+          <Route path="/misc" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
         </Routes>
 
       </Suspense>

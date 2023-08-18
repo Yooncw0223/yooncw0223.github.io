@@ -1,30 +1,62 @@
 
 import './contentpage.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Postcontent from './postcontent';
-import { contentList } from '../assets/posts/projects/general.ts';
+import { contentList } from '../assets/posts/projects/general';
+import { title } from 'process';
 
 interface Content {
   contentPath: string
 }
 
 export default function Content(props: Content) {
-  const defaultDoc = props.contentPath + "/general.ts";
 
-  console.log('test');
-  // const test = require(defaultDoc);
+  const [contents, setContents] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const getPosts = () => {
+      const defaultDoc = props.contentPath + "/general";
+      // const contents = await import(defaultDoc);
+      console.log("!!!!!!!!!!!!!!got through!!!!!!!!!!!!");
+      console.log("content 2: " + contentList);
+      setContents(contentList);
+      setLoading(true);
+      console.log("test" + contentList);
+      setLoading(false);
+    };
+    getPosts();
+
+
+    return () => {
+      // do some clean up here
+      console.log(contentList);
+      console.log("clean up complete");
+    }
+  });
+
+  // console.log('default' + defaultDoc);
+  // const contentList = await import(defaultDoc);
+  console.log("hello");
+  console.log(contentList);
   
-  const [selection, setSelection] = useState(defaultDoc);
+  if (loading) {
+    return (
+      <div>Loading...</div>
+    )
+  }
+  
+  console.log("I shouldn't be here")
 
   return (
-    <div>
-      <div>
-        Hello
+    <div className="contentPageDiv">
+      <div className="tableOfContent">
+        {contentList[0].title}
       </div>
 
-      <hr />
+      <hr className="contentVerticalLine"/>
 
-      <Postcontent postPath={contentList[0]}> </Postcontent> 
+      <Postcontent className="articleContent" content={contentList[0].mdContent}> </Postcontent> 
 
     </div>
   );
