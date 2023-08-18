@@ -16,15 +16,17 @@ export default function Content(props: Content) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const getPosts = () => {
-      const defaultDoc = props.contentPath + "/general";
-      // const contents = await import(defaultDoc);
-      console.log("!!!!!!!!!!!!!!got through!!!!!!!!!!!!");
-      console.log("content 2: " + contentList);
-      setContents(contentList);
-      setLoading(true);
-      console.log("test" + contentList);
-      setLoading(false);
+    const getPosts = async () => {
+      // setLoading(true);
+      // setContents(contentList);
+      // setLoading(false);
+      
+      const panel = await import('../assets/posts/projects/general');
+      console.log('makrer')
+      console.log(panel);
+      console.log(panel.contentList)
+      console.log('close')
+      
     };
     getPosts();
 
@@ -36,18 +38,13 @@ export default function Content(props: Content) {
     }
   });
 
-  // console.log('default' + defaultDoc);
-  // const contentList = await import(defaultDoc);
-  console.log("hello");
-  console.log(contentList);
-  
+ 
   if (loading) {
     return (
       <div>Loading...</div>
     )
   }
   
-  console.log("I shouldn't be here")
 
   return (
     <div className="contentPageDiv">

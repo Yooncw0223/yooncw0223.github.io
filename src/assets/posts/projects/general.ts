@@ -6,3 +6,7 @@ import { content } from './bar';
 // }
 
 export const contentList = [content];
+
+export default function projectList() {
+  return contentList;
+}
