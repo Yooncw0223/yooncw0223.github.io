@@ -14,8 +14,11 @@
 .contentVerticalLine {
   width: 0px;
   height: 100vh;
-  margin-left: 0px;
+  margin: 0px;
   border-style: solid;
+  top: 0px;
+  bottom: 0px;
+  
 }
 
 .articleContent {

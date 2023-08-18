@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Postcontent from './postcontent';
 import { contentList } from '../assets/posts/projects/general';
 import { title } from 'process';
+import ReactMarkdown from 'react-markdown';
 
 interface Content {
   contentPath: string
@@ -56,7 +57,7 @@ export default function Content(props: Content) {
 
       <hr className="contentVerticalLine"/>
 
-      <Postcontent className="articleContent" content={contentList[0].mdContent}> </Postcontent> 
+      <ReactMarkdown children={contentList[0].mdContent} />
 
     </div>
   );
