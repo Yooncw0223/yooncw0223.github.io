@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HOME/>}/>
           <Route path="/about" element={<ABOUT/>}/>
-          <Route path="/projects" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
+          <Route path="/projects" element={<CONTENT contentPath="../assets/posts/projects" />}/>
           <Route path="/papers" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
           <Route path="/misc" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
         </Routes>

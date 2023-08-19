@@ -20,13 +20,25 @@ export default function Content(props: Content) {
       // setLoading(true);
       // setContents(contentList);
       // setLoading(false);
-      
+      setLoading(true);
+
+      // const panel = await import('../assets/posts/projects/general');
+      //
+      const value: string = props.contentPath + '/general';
       const panel = await import('../assets/posts/projects/general');
-      console.log('makrer')
+
+      console.log("debug start")
+      console.log('../assets/posts/projects/general')
+      console.log(props.contentPath + "/general")
+      console.log(props.contentPath + "/general")
+      console.log("end")
+      setContents(panel)
+      
+
+      setLoading(false);
       console.log(panel);
       console.log(panel.contentList)
       console.log('close')
-      
     };
     getPosts();
 
