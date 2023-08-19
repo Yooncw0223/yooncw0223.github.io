@@ -3,15 +3,23 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './components/navbar';
-import { content } from './assets/posts/projects/bar';
-import reactMarkdown from 'react-markdown';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import * as contentManager from './assets/posts/manager';
 
 const ABOUT = lazy(() => import('./pages/about'));
 const HOME = lazy(() => import('./pages/home'));
 const CONTENT = lazy(() => import('./components/contentpage'));
 
 function App() {
+  // managing contents
+  const contents = contentManager.default();
+  const contentRoutes = []; 
+  for (const key in contents) {
+    contentRoutes.push(
+      <Route path={"/" + key} element={<CONTENT contents={contents[key]}/>}/>
+    )
+  };
+  
+
   return (
     <div className="App">
       <Navbar/>
@@ -23,9 +31,11 @@ function App() {
         <Routes>
           <Route path="/" element={<HOME/>}/>
           <Route path="/about" element={<ABOUT/>}/>
-          <Route path="/projects" element={<CONTENT contentPath="../assets/posts/projects" />}/>
-          <Route path="/papers" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
-          <Route path="/misc" element={<CONTENT contentPath={"./assets/posts/projects"} />}/>
+
+          {contentRoutes}
+
+          
+
         </Routes>
 
       </Suspense>
