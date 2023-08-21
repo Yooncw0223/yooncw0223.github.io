@@ -7,7 +7,6 @@ import * as papers from './papers/general';
 import * as misc from './misc/general';
 
 export default function serve() {
-  console.log(projects)
   const archive = {
     projects: projects,
     papers: papers,
@@ -16,5 +15,3 @@ export default function serve() {
 
   return archive;
 }
-
-

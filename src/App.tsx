@@ -15,7 +15,7 @@ function App() {
   const contentRoutes = []; 
   for (const key in contents) {
     contentRoutes.push(
-      <Route path={"/" + key} element={<CONTENT contents={contents[key]}/>}/>
+      <Route path={"/" + key} element={<CONTENT contents={contents[key]} />}/>
     )
   };
   

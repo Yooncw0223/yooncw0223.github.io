@@ -6,9 +6,17 @@
 }
 
 .tableOfContent {
-  width: 24%;
-  margin: 0;
-  padding: 0;
+  width: min(20vw, 300px);
+  margin-top: 4vh;
+  padding: 0px;
+  font-family: var(--tocFont);
+  font-size: 24px;
+  font-weight: 300;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: left;
+  align-content: center;
 }
 
 .contentVerticalLine {
@@ -18,10 +26,24 @@
   border-style: solid;
   top: 0px;
   bottom: 0px;
-  
+  padding: 0;
+}
+
+.contentLink {
+  margin: 0px;
+  padding: 0.8vh;
+}
+
+.contentLink:hover {
+  cursor: grab;
+  background-color: #faf0e6;
 }
 
 .articleContent {
-  margin-left: 0px;
-  padding: 1000px;
+  margin-left: 5%;
+  font-family: var(--textFont);
+  font-size: 24px;
+  margin: auto;
+  margin-top: 2vh;
+  width: 50%;
 }

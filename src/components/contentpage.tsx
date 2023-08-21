@@ -19,10 +19,11 @@ export default function Content(props: Content) {
 
   useEffect(() => {
     // using hooks to prevent infinite re-rendering
-    setContents(props.contents.contentList);
-    console.log('test')
-    console.log(props.contents.contentList);
+    const contentList = props.contents.contentList;
+    setContents(contentList);
+
     setLoading(false);
+
   });
 
   
@@ -30,16 +31,23 @@ export default function Content(props: Content) {
     return <div>Loading at this moment</div> 
 
 
+  // now generate the links for the table of contents
+  const links = [];
+  for (let i = 0; i < contents.length; i++) {
+    const content = contents[i];
+    links.push(<a onClick={() => setPostIndex(i)} className="contentLink" key={content.title}>{"[" + content.title + "]"}</a>)
+    links.push(<br/>)
+  }
 
   return (
     <div className="contentPageDiv">
       <div className="tableOfContent">
-        {contents[0].title}
+        {links}
       </div>
 
       <hr className="contentVerticalLine"/>
 
-      <ReactMarkdown children={contents[0].mdContent} />
+      <ReactMarkdown className="articleContent" children={contents[postIndex].mdContent} />
 
     </div>
   );

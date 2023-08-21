@@ -1,11 +1,7 @@
-
-import { content } from './bar';
-
-// export default function content() {
-//   return "hello there this is content";
-// }
-
-export const contentList = [content];
+export const contentList = [
+  require('./introduction'),
+  require('./website'),
+].map(item => item.content);
 
 export default function projectList() {
   return contentList;
