@@ -8,6 +8,7 @@
 .tableOfContent {
   width: min(20vw, 300px);
   margin-top: 4vh;
+  margin-left: 10px;
   padding: 0px;
   font-family: var(--tocFont);
   font-size: 24px;
