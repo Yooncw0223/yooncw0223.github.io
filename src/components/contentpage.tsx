@@ -3,6 +3,7 @@ import './contentpage.css';
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import ToggleContent from './toggleContent';
+import rehypeRaw from "rehype-raw";
 
 interface Input {
   contentPath: string,
@@ -72,7 +73,7 @@ export default function Content(props: Input) {
       </section>
 
       <hr className="contentVerticalLine"/>
-      <ReactMarkdown className="articleContent" children={getPost(contents, postIndex).mdContent} />
+      <ReactMarkdown className="articleContent" children={getPost(contents, postIndex).mdContent} rehypePlugins={[rehypeRaw]} />
     </div>
   );
 }
