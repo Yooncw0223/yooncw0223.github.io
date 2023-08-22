@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Navbar from './components/navbar';
@@ -8,8 +8,9 @@ import * as contentManager from './assets/posts/manager';
 const ABOUT = lazy(() => import('./pages/about'));
 const HOME = lazy(() => import('./pages/home'));
 const CONTENT = lazy(() => import('./components/contentpage'));
+const NOTFOUND = lazy(() => import('./pages/notfound'));
 
-function App() {
+export default function App() {
   // managing contents
   const contents = contentManager.default();
   const contentRoutes = []; 
@@ -34,6 +35,8 @@ function App() {
 
           {contentRoutes}
 
+          <Route path="*" element={<NOTFOUND/>} />
+
           
 
         </Routes>
@@ -43,12 +46,4 @@ function App() {
   );
 }
 
-function AppWithRouter() {
-  return (
-    <Router>
-      <App />
-    </Router>
-  )
-}
 
-export default AppWithRouter;
