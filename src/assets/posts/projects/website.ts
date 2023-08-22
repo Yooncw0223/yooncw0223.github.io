@@ -4,8 +4,14 @@ export const content = {
   mdContent: `
 # About this site
 
-This site is built using <a href="https://react.dev/" target="_blank">React</a> and <a href="https://docs.github.com/pages" target="_blank">Github Pages</a>. The tool used was NVim. You can take a look at the code at this 
-<a href="https://github.com/Yooncw0223/yooncw0223.github.io/tree/main" target="_blank">link</a>.
+This site is built using <a href="https://react.dev/" target="_blank">React</a> and <a href="https://docs.github.com/pages" target="_blank">Github Pages</a>. The development tool was NVim. You can take a look at the code at this 
+<a href="https://github.com/Yooncw0223/yooncw0223.github.io/tree/main" target="_blank">link</a>. 
+
+<hr />
+
+**UPDATE**: While Github Pages works, its problem with React routers affect the user experience significantly. While the fix is on work, more stable version is deployed via Vercel at this <a href="https://yooncw0223-github-io.vercel.app" target="_blank">link</a>.
+
+<hr />
 
 The goal of this site was to make a personal portfolio + note site using as little resource as possible.
 
