@@ -44,12 +44,13 @@
 }
 
 .articleContent {
-  margin-left: 5%;
+  margin-left: 4%;
   font-family: var(--textFont);
   font-size: 24px;
-  margin: auto;
   margin-top: 2vh;
   width: 50%;
+  text-align: left;
+  align-content: center;
 }
 
 .toggleSettings {
