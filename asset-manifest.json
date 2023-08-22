@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ghsite/static/css/main.b26bcfb5.css",
-    "main.js": "/ghsite/static/js/main.b73ba00d.js",
+    "main.js": "/ghsite/static/js/main.e54f51f3.js",
     "static/css/69.93cc8077.chunk.css": "/ghsite/static/css/69.93cc8077.chunk.css",
     "static/js/69.d7dd2577.chunk.js": "/ghsite/static/js/69.d7dd2577.chunk.js",
     "static/css/549.7f0722a2.chunk.css": "/ghsite/static/css/549.7f0722a2.chunk.css",
@@ -18,7 +18,7 @@
     "static/media/Silkscreen-Regular.ttf": "/ghsite/static/media/Silkscreen-Regular.55c63cb6117763b21c84.ttf",
     "index.html": "/ghsite/index.html",
     "main.b26bcfb5.css.map": "/ghsite/static/css/main.b26bcfb5.css.map",
-    "main.b73ba00d.js.map": "/ghsite/static/js/main.b73ba00d.js.map",
+    "main.e54f51f3.js.map": "/ghsite/static/js/main.e54f51f3.js.map",
     "69.93cc8077.chunk.css.map": "/ghsite/static/css/69.93cc8077.chunk.css.map",
     "69.d7dd2577.chunk.js.map": "/ghsite/static/js/69.d7dd2577.chunk.js.map",
     "549.7f0722a2.chunk.css.map": "/ghsite/static/css/549.7f0722a2.chunk.css.map",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.b26bcfb5.css",
-    "static/js/main.b73ba00d.js"
+    "static/js/main.e54f51f3.js"
   ]
 }
