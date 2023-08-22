@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkghsite=self.webpackChunkghsite||[]).push([[109],{9109:function(e,n,o){o.r(n),o.d(n,{default:function(){return r}});var l=o(184);function r(){return console.log("-------------------"),console.log(error),console.log("-----------------"),(0,l.jsx)("div",{children:"hello"})}}}]);
+//# sourceMappingURL=109.872ca142.chunk.js.map
