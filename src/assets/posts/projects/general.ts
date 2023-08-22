@@ -1,32 +1,4 @@
-
-// just some syntactic sugar to pipeline things
-
-
-const process = (contents) => {
-  return {
-    key: contents.key,
-    value: extractFromValue(contents.value)
-  }
-};
-
-const extractFromValue = (itemList) => {
-  const result = [];
-  for (const item of itemList) {
-    if (isSubdir(item)) {
-      result.push(process(item));
-    } else {
-      result.push(extract(item));
-    }
-  }
-  return result;
-}
-
-const extract = (item: Object) => item.content;
-
-const isSubdir = (candidate) => typeof candidate === 'object' &&
-                                !Array.isArray(candidate) &&
-                                candidate !== null &&
-                                "key" in candidate;
+import { process, extractFromvalue, extract } from '../util';
 
 export const contentList = process({
   key: "Projects",

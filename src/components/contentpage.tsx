@@ -46,7 +46,7 @@ export default function Content(props: Input) {
       console.log('test')
       console.log(content);
       if ("key" in values[i]) {
-        links.push(<ToggleContent className="tableOfContent" title={values[i].key} content={buildToC(values[i], [...indices, i])} />);
+        links.push(<ToggleContent title={values[i].key} content={buildToC(values[i], [...indices, i])} contentStyle="tableOfContent" toggleStyle="toggleSettings" />);
       } else {
         links.push(<a onClick={() => setPostIndex([...indices, i])} className="contentLink" key={content.title}>{"[" + content.title + "]"}</a>)
       }

@@ -2,7 +2,7 @@
   "name": "ghsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yooncw0223.github.io/ghsite",
+  "homepage": "https://yooncw0223.github.io/",
   "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
