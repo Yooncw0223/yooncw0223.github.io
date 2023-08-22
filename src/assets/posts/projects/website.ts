@@ -9,7 +9,7 @@ This site is built using <a href="https://react.dev/" target="_blank">React</a> 
 
 <hr />
 
-**UPDATE**: While Github Pages works, its problem with React routers affect the user experience significantly. While the fix is on work, more stable version is deployed via Vercel at this <a href="https://yooncw0223-github-io.vercel.app" target="_blank">link</a>.
+**UPDATE**: While Github Pages works, its problem with React routers affect the user experience significantly. While the fix is on work, a more stable version is deployed via Vercel at this <a href="https://yooncw0223-github-io.vercel.app" target="_blank">link</a>.
 
 <hr />
 
