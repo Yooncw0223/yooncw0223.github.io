@@ -1,41 +1,49 @@
 
 .contentPageDiv {
   display: flex;
-  flex-direction: row;
-  align-content: flex-start;
+  /* height: 100dvh; */
+  /* height: 100vh; */
+  /* flex-direction: row; */
+  /* align-content: flex-start; */
 }
 
 .tableOfContent {
   width: min(20vw, 300px);
-  margin-top: 4vh;
-  margin-left: 10px;
+  min-height: 100vh;
+  /* height: max(100vh, 100%); */
   padding: 0px;
   font-family: var(--tocFont);
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 20px;
+  /* font-weight: 100; */
   display: flex;
   justify-content: start;
   flex-direction: column;
   text-align: left;
   align-content: center;
+  border-right: 1px solid gray;
+  background-color: #ECECEC;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* margin: 0; */
 }
 
-.contentVerticalLine {
-  width: 0px;
-  height: 100vh;
-  margin: 0px;
-  border-style: solid;
-  top: 0px;
-  bottom: 0px;
-  padding: 0;
-}
+/* .contentVerticalLine { */
+/*   width: 0px; */
+/*   height: 100vh; */
+/*   margin: 0px; */
+/*   border-style: solid; */
+/*   top: 0px; */
+/*   bottom: 0px; */
+/*   padding: 0; */
+/* } */
 
 .contentLink {
   margin: 0px;
   padding: 0.8vh;
-  width: 80%;
+  /* width: 80%; */
   white-space: normal;
   word-break: break-all;
+  text-align: center;
 }
 
 .contentLink:hover {
@@ -51,15 +59,16 @@
   width: 50%;
   text-align: left;
   align-content: center;
+  min-height: 100vh;
 }
 
 .toggleSettings {
   cursor: grab;
-  font-weight: bold;
+  font-weight: medium;
+  text-align: center;
 }
 
 .toggleSettings:hover {
-  width: 80%;
   background-color: #FAA0A0;
 }
 

@@ -13,7 +13,6 @@ export default function Navbar() {
 
       </div>
 
-      <hr className="verticalLine" />
 
       <nav className="navBar">
         <Link className="navBarElement" to="/projects">	🧪Projects </Link>

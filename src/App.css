@@ -1,15 +1,19 @@
 
 :root {
   --titleColor: #71c200;
-  --navBarMenuColor: black;
+  --navBarMenuColor: white;
   --pageHeadingColor: black;
   --backgroundColor: white;
   --textColor: #171717;
   --lineColor: black;
+  /* --navBarBackgroundColor: #3e4352; */
+  --navBarBackgroundColor: #2b303d;
   
 
   /* Font */
   /* --siteTitleFont: "Silkscreen"; */
+
+  --siteTitle: #FF8800;
   --siteTitleFont: "Silkscreen";
   --navBarFont: "Karla";
   --pageHeadingFont: "Karla";
@@ -17,19 +21,25 @@
   --tocFont: "Karla";
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 
 
 .App {
   text-align: center;
-  position: fixed;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
   background-color: var(--backgroundColor);
   overflow-y: auto;
   min-width: 600px;
+  /* width: 100%; */
 }
 
 .line {
@@ -44,7 +54,7 @@
   width: 120px;
   object-fit: cover;
   margin-left:20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .App-link {

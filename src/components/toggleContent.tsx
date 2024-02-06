@@ -12,20 +12,14 @@ export default function ToggleContent(props: Input) {
   const [hide, setHide] = useState(true);
   const [content, setContent] = useState((<></>));
 
-  console.log("------------------------------------")
-  console.log(props.className);
-  console.log("------------------------------------")
   useEffect(() => {
     setContent(props.content);
   });
 
 
   function handleClick() {
-    console.log("clicked")
     setHide(!hide);
   }
-
-  console.log("reached here")
 
   return (<section className={props.contentStyle}>
     <section onClick={handleClick} className={props.toggleStyle}> 

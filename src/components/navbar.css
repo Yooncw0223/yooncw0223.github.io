@@ -1,12 +1,15 @@
 
 .nav-header {
-  background-color: var(--backgroundColor);
-  /* min-height: 100vh; */
+  /* background-color: var(--backgroundColor); */
+  max-height: 10%;
+  background-color: var(--navBarBackgroundColor);
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
+  border-bottom: 3px gray black;
 }
 
 .headerLeft {
@@ -18,15 +21,17 @@
 
 
 .siteTitle {
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: calc(25px + 1vmin);
   font-family: var(--siteTitleFont);
+  width: min(300px, 40%); 
   margin: 0;
   padding: 0;
   margin-left: 50px;
-  justify-content: center;
+  /* justify-content: center; */
   align-self: center;
   color: var(--siteTitle);
-  background-color: #FAA0A0;
+  /* background-color: #FAA0A0; */
   
   padding: 5px;
   padding-right: 15px;
@@ -39,11 +44,11 @@
 }
 
 .siteTitle:hover {
-  color: white;
+  /* color: white; */
 }
 
 .verticalLine {
-  height: 60px;
+  height: 100%;
   margin-left: 35px;
   margin-right: 15px;
   top: 0px;
@@ -53,46 +58,53 @@
 
 
 .navBar {
+  /* margin-left: auto; */
+  /* margin-right: 10px; */
   text-align: center;
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .navBarElement {
   display: inline-block;
-  margin: 10px;
+  margin: 8px;
   text-align: center;
 
-  width: 160px;
+  /* width: 200px; */
 
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 
-  border-radius: 5%;
 
   color: var(--navBarMenuColor);
   background-color: transparent;
   text-decoration: none;
-  font-size: 20px;
-  font-family: Karla; 
+  font-size: 18px;
+  /* font-family: Karla;  */
+  font-family: var(--siteTitleFont);
 }
 
 
 .navBarElement:nth-child(1) {
-  background-color: #F0DF78;
+  color: #98be65;
+  /* background-color: #F0DF78; */
 }
 
 .navBarElement:nth-child(2) {
-  background-color: #C0D86D;
+  color: #ECBE7B;
+  /* background-color: #C0D86D; */
 }
 
 .navBarElement:nth-child(3) {
-  background-color: #9EC1CF;
+  color: #c678dd;
+  /* background-color: #9EC1CF; */
 }
 
 .navBarElement:nth-child(4) {
-  background-color: #CC99C9;
+  color: #51afef;
+  /* background-color: #CC99C9; */
 }
 
 .navBarElement:hover {

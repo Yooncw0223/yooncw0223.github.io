@@ -64,11 +64,10 @@ export default function Content(props: Input) {
 
   return (
     <div className="contentPageDiv">
-      <section className="tableOfContent">
+      <div className="tableOfContent">
         {buildToC(contents)}
-      </section>
+      </div>
 
-      <hr className="contentVerticalLine"/>
       <ReactMarkdown className="articleContent" children={mdContent} rehypePlugins={[rehypeRaw]} />
     </div>
   );
